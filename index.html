@@ -83,22 +83,9 @@
             // Obtener el valor del campo de correo electrónico
             var email = document.getElementById('email').value;
 
-            // Validar el correo electrónico
-            // Aquí puedes realizar una verificación básica del formato del correo electrónico utilizando una expresión regular o una lógica personalizada
-
-            // Comprobar si el correo electrónico es válido
-            if (email === 'correo1@example.com' || email === 'correo2@example.com' || email === 'anghelo@gmail.com' || email === 'angel@example.com') {
-                // Ocultar el formulario de inicio de sesión
-                document.querySelector('.login-form').style.display = 'none';
-
-                // Mostrar el contenedor de la aplicación y cargar la aplicación de AppSheet después de un breve retraso
-                setTimeout(function() {
-                    document.getElementById('appSheetFrame').style.display = 'block';
-                    document.getElementById('appSheetFrame').src = 'https://www.appsheet.com/start/3cd300c8-83e7-4316-96e4-70c9aa363384'; 
-                }, 500); // Ajusta el valor de retraso (en milisegundos) según sea necesario
-            } else {
-                alert('Correo electrónico no autorizado');
-            }
+            // Mostrar el contenedor de la aplicación y cargar la aplicación de AppSheet
+            document.getElementById('appSheetFrame').style.display = 'block';
+            document.getElementById('appSheetFrame').src = 'https://www.appsheet.com/start/3cd300c8-83e7-4316-96e4-70c9aa363384';
         });
     </script>
 </body>
